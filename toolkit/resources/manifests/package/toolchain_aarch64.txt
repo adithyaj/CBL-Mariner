@@ -42,9 +42,9 @@ cracklib-debuginfo-2.9.7-3.cm2.aarch64.rpm
 cracklib-devel-2.9.7-3.cm2.aarch64.rpm
 cracklib-dicts-2.9.7-3.cm2.aarch64.rpm
 cracklib-lang-2.9.7-3.cm2.aarch64.rpm
-createrepo_c-0.11.1-6.cm2.aarch64.rpm
-createrepo_c-debuginfo-0.11.1-6.cm2.aarch64.rpm
-createrepo_c-devel-0.11.1-6.cm2.aarch64.rpm
+createrepo_c-0.17.5-1.cm2.aarch64.rpm
+createrepo_c-debuginfo-0.17.5-1.cm2.aarch64.rpm
+createrepo_c-devel-0.17.5-1.cm2.aarch64.rpm
 cryptsetup-2.3.3-2.cm2.aarch64.rpm
 cryptsetup-debuginfo-2.3.3-2.cm2.aarch64.rpm
 cryptsetup-devel-2.3.3-2.cm2.aarch64.rpm
@@ -235,10 +235,10 @@ libsemanage-python3-3.2-1.cm2.aarch64.rpm
 libsepol-3.2-1.cm2.aarch64.rpm
 libsepol-debuginfo-3.2-1.cm2.aarch64.rpm
 libsepol-devel-3.2-1.cm2.aarch64.rpm
-libsolv-0.7.7-4.cm2.aarch64.rpm
-libsolv-debuginfo-0.7.7-4.cm2.aarch64.rpm
-libsolv-devel-0.7.7-4.cm2.aarch64.rpm
-libsolv-tools-0.7.7-4.cm2.aarch64.rpm
+libsolv-0.7.19-1.cm2.aarch64.rpm
+libsolv-debuginfo-0.7.19-1.cm2.aarch64.rpm
+libsolv-devel-0.7.19-1.cm2.aarch64.rpm
+libsolv-tools-0.7.19-1.cm2.aarch64.rpm
 libssh2-1.9.0-1.cm2.aarch64.rpm
 libssh2-debuginfo-1.9.0-1.cm2.aarch64.rpm
 libssh2-devel-1.9.0-1.cm2.aarch64.rpm
