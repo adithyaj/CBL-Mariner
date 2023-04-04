@@ -12,7 +12,9 @@
   "mariner-extras.repo": "6f5c89b1f2c4df2126b0f0e5c367266ccad9b1dff410914cf5f2bce0767bc30a",
   "mariner-microsoft-preview.repo": "ba2b42f7f26ae904bd63cf02100f71ad75d0621d3628bc904d63b3a594474b0c",
   "mariner-microsoft.repo": "a20e69c50b51d297f807df2ac82c2813aa3d1fba0329885f38c739d37cac8c03",
+  "mariner-nvidia.repo": "84af813e67b8e2e17993984599ceeac8a2f07c5803f4eb15e1f16449e187c3bd",
+  "mariner-nvidia-preview.repo": "1a68a94447386924f7a24744051efa77caf52e2e8aef9cc6eb103987160fec1a",
   "mariner-official-base.repo": "4d7ecff06728fc92d629d5371bc0f04084ec4cd654887ced41d9d1be136ee8ce",
-  "mariner-official-preview.repo": "25d9875fcae366e55c4b7106d6f76e5f943dda8b9d89fd1f653bb672f786c405"
+  "mariner-official-preview.repo": "25d9875fcae366e55c4b7106d6f76e5f943dda8b9d89fd1f653bb672f786c405",
  }
 }
