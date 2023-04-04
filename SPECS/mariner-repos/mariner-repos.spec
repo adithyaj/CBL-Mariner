@@ -1,7 +1,7 @@
 Summary:        CBL-Mariner repo files, gpg keys
 Name:           mariner-repos
 Version:        2.0
-Release:        8%{?dist}
+Release:        9%{?dist}
 License:        MIT
 Vendor:         Microsoft Corporation
 Distribution:   Mariner
@@ -21,6 +21,8 @@ Source10:       mariner-official-base.repo
 Source11:       mariner-official-preview.repo
 Source12:       mariner-extended-debuginfo.repo
 Source13:       mariner-extended-debuginfo-preview.repo
+Source14:       mariner-nvidia.repo
+Source15:       mariner-nvidia-preview.repo
 
 Requires:       %{name}-shared = %{version}-%{release}
 
@@ -109,6 +111,22 @@ Requires:       %{name}-shared = %{version}-%{release}
 %description microsoft-preview
 %{summary}
 
+%package nvidia
+Summary:        CBL-Mariner Nvidia repo file.
+Group:          System Environment/Base
+Requires:       %{name}-shared = %{version}-%{release}
+
+%description nvidia
+%{summary}
+
+%package nvidia-preview
+Summary:        CBL-Mariner Nvidia preview repo file.
+Group:          System Environment/Base
+Requires:       %{name}-shared = %{version}-%{release}
+
+%description nvidia-preview
+%{summary}
+
 %package preview
 Summary:        CBL-Mariner preview repo file.
 Group:          System Environment/Base
@@ -143,6 +161,8 @@ install -m 644 %{SOURCE10} $REPO_DIRECTORY
 install -m 644 %{SOURCE11} $REPO_DIRECTORY
 install -m 644 %{SOURCE12} $REPO_DIRECTORY
 install -m 644 %{SOURCE13} $REPO_DIRECTORY
+install -m 644 %{SOURCE14} $REPO_DIRECTORY
+install -m 644 %{SOURCE15} $REPO_DIRECTORY
 
 export RPM_GPG_DIRECTORY="%{buildroot}%{_sysconfdir}/pki/rpm-gpg"
 
@@ -204,6 +224,14 @@ gpg --batch --yes --delete-keys 2BC94FFF7015A5F28F1537AD0CD9FED33135CE90
 %defattr(-,root,root,-)
 %config(noreplace) %{_sysconfdir}/yum.repos.d/mariner-microsoft-preview.repo
 
+%files nvidia
+%defattr(-,root,root,-)
+%config(noreplace) %{_sysconfdir}/yum.repos.d/mariner-nvidia.repo
+
+%files nvidia-preview
+%defattr(-,root,root,-)
+%config(noreplace) %{_sysconfdir}/yum.repos.d/mariner-nvidia-preview.repo
+
 %files preview
 %defattr(-,root,root,-)
 %config(noreplace) %{_sysconfdir}/yum.repos.d/mariner-official-preview.repo
@@ -214,6 +242,9 @@ gpg --batch --yes --delete-keys 2BC94FFF7015A5F28F1537AD0CD9FED33135CE90
 %{_sysconfdir}/pki/rpm-gpg/MICROSOFT-METADATA-GPG-KEY
 
 %changelog
+* Mon Apr 3 2023 Adithya Jayachandran <adjayach@microsoft.com> - 2.0-9
+- Add support for Mariner Nvidia and Nvidia preview repository
+
 * Thu Jul 14 2022 Andrew Phelps <anphel@microsoft.com> - 2.0-8
 - Add SRPM and Debuginfo repos to existing base, extended, and preview subpackages
 
